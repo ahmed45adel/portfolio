@@ -1,0 +1,20 @@
+.skills{
+    background-color: rgb(66, 66, 66);
+    margin-bottom: 2vw;
+}
+
+.progress {
+    height: 1.8rem;
+}
+.skills-body{
+    align-items: baseline;
+}
+ul {
+    padding-top: 50px;
+}
+li {
+        background-color: rgb(66, 66, 66);
+color: white;
+border-color: white;
+border-width: 50px;
+}

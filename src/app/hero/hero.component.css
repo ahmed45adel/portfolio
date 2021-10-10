@@ -1,0 +1,10 @@
+.hero {
+      background-image: url('http://www.learnwebtech.in/wp-content/uploads/2020/07/learn-1024x402.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+}
