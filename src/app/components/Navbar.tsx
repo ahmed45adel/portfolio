@@ -1,11 +1,12 @@
 'use client'
 import Link from 'next/link'
 import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useTheme } from '../context/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 
 export default function Navbar() {
-  const theme = 'dark';
+  const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -24,7 +25,7 @@ export default function Navbar() {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
-            Devfolio&trade;
+            Home
           </Link>
           
           {/* Desktop Menu */}
@@ -39,7 +40,7 @@ export default function Navbar() {
               </Link>
             ))}
             <motion.button
-              onClick={console.log('here')}
+              onClick={toggleTheme}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -101,7 +102,7 @@ export default function Navbar() {
                 >
                   <button
                     onClick={() => {
-                      console.log('here');
+                      toggleTheme();
                       setIsMobileMenuOpen(false);
                     }}
                     className="flex items-center py-2 hover:text-primary transition-colors"
