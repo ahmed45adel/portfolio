@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <body className={`bg-white transition-colors dark:bg-gray-900 dark:text-white ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider>
           <Navbar />
-          {children}
+          <main className="min-h-screen pt-24">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
