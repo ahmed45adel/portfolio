@@ -7,7 +7,7 @@ import {
   fadeIn, 
   staggerContainer, 
 } from '@/utils/animations'
-import { FaCode, FaLaptopCode, FaGraduationCap, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaCode, FaLinkedin, FaGithub, FaPalette, FaTools, FaProjectDiagram, FaDatabase, FaServer } from 'react-icons/fa'
 
 export default function Hero() {
   return (
@@ -98,42 +98,109 @@ export default function Hero() {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <FaCode className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+                    <FaCode className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">Core</h3>
                     <ul className="text-secondary space-y-2">
-                      <li>React / Next.js</li>
+                      <li>React</li>
+                      <li>Next.js</li>
+                      <li>Vue.js</li>
                       <li>TypeScript</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>React Router</li>
+                      <li>Vite</li>
+                      <li>npm</li>
+                      <li>yarn</li>
+                    </ul>
+                  </motion.div>
+                  <motion.div 
+                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+                    variants={fadeInUp}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <FaPalette className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">Styling & UI</h3>
+                    <ul className="text-secondary space-y-2">
                       <li>Tailwind CSS</li>
-                      <li>HTML5 / CSS3</li>
+                      <li>Styled Components</li>
+                      <li>Sass</li>
+                      <li>HTML5</li>
+                      <li>Bootstrap</li>
+                      <li>Material UI</li>
+                      <li>Chakra UI</li>
+                      <li>Shadcn/ui</li>
+                      <li>Framer Motion</li>
+                      <li>Next-Themes</li>
                     </ul>
                   </motion.div>
-                  
                   <motion.div 
                     className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
                     variants={fadeInUp}
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">sec 2</h3>
+                    <FaTools className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">Tools</h3>
                     <ul className="text-secondary space-y-2">
-                      <li>items</li>
-                      <li>items</li>
-                      <li>items</li>
-                      <li>items</li>
+                      <li>Git</li>
+                      <li>GitHub</li>
+                      <li>GitLab</li>
+                      <li>GitHub Pages</li>
+                      <li>Vercel</li>
+                      <li>Netlify</li>
+                      <li>Heroku</li>
+                      <li>Webpack</li>
+                      <li>Babel</li>
+                      <li>ESLint</li>
                     </ul>
                   </motion.div>
-                  
                   <motion.div 
                     className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
                     variants={fadeInUp}
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
+                    <FaProjectDiagram className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">APIs</h3>
                     <ul className="text-secondary space-y-2">
-                      <li>Git / GitHub</li>
+                      <li>Next.js API Routes</li>
+                      <li>Axios</li>
+                      <li>Ajax</li>
+                      <li>Zod</li>
+                      <li>Dotenv</li>
+                    </ul>
+                  </motion.div>
+                  <motion.div 
+                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+                    variants={fadeInUp}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <FaDatabase className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">Storage</h3>
+                    <ul className="text-secondary space-y-2">
+                      <li>MongoDB</li>
+                      <li>Prisma</li>
+                      <li>Neon</li>
+                      <li>Redis (Upstash)</li>
+                      <li>Appwrite</li>
+                    </ul>
+                  </motion.div>
+                  <motion.div 
+                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+                    variants={fadeInUp}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <FaServer className="h-8 w-8 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">Services</h3>
+                    <ul className="text-secondary space-y-2">
+                      <li>Clerk Auth</li>
+                      <li>Bcryptjs</li>
+                      <li>Cloudinary</li>
+                      <li>Stripe</li>
+                      <li>Ably</li>
                     </ul>
                   </motion.div>
                 </motion.div>

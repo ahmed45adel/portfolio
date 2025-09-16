@@ -81,11 +81,19 @@ export default function Experience() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <h3 className="text-xl font-semibold mb-2">Bachelor of </h3>
-            <p className="text-primary mb-2">University • 2014 - 2018</p>
-            <p className="text-secondary">
-              hmmm
-            </p>
+            <h3 className="text-xl font-semibold mb-2">Bachelor of Engineering</h3>
+            <p className="text-primary mb-2">Facutly of Engineering | Alexandria University</p>
+            <p className="text-secondary">2014-2019</p>
+          </motion.div>
+          <motion.div 
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"
+            variants={fadeInUp}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <h3 className="text-xl font-semibold mb-2">Front-end web development (ITP)</h3>
+            <p className="text-primary mb-2">Information Technology Institute (ITI)</p>
+            <p className="text-secondary">2021/8 - 2022/1</p>
           </motion.div>
         </motion.div>
       </motion.section>
