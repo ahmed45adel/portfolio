@@ -14,10 +14,9 @@ export default function Navbar() {
   };
 
   const menuItems = [
-    { href: '/', label: 'Home' },
+    { href: '/', label: 'About' },
     { href: '/experience', label: 'Experience' },
     { href: '/projects', label: 'Projects' },
-    { href: '/contact', label: 'Contact' },
   ];
 
   return (
