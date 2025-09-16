@@ -4,7 +4,7 @@ import { projects } from '@/content/projects'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
+import { fadeInUp, staggerContainer } from '@/utils/animations'
 
 export default function Projects() {
   return (
@@ -28,7 +28,8 @@ export default function Projects() {
               key={project.title}
               className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
               variants={fadeInUp}
-              {...cardHoverSmall}
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
               <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
                 <Image

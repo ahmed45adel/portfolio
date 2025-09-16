@@ -5,7 +5,6 @@ import {
   fadeInUp, 
   fadeIn, 
   staggerContainer, 
-  cardHoverSmall 
 } from '@/utils/animations'
 
 export default function Experience() {
@@ -33,7 +32,8 @@ export default function Experience() {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">frontend web developer</h3>
             <p className="text-primary mb-2">Company • 2020 - Present</p>
@@ -42,10 +42,11 @@ export default function Experience() {
               <li>did more stuff</li>
             </ul>
           </motion.div>
-                    <motion.div 
+          <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">frontend web developer</h3>
             <p className="text-primary mb-2">Company • 2020 - Present</p>
@@ -77,7 +78,8 @@ export default function Experience() {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Bachelor of </h3>
             <p className="text-primary mb-2">University • 2014 - 2018</p>

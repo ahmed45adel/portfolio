@@ -6,13 +6,12 @@ import {
   fadeInUp, 
   fadeIn, 
   staggerContainer, 
-  cardHover, 
 } from '@/utils/animations'
 import { FaCode, FaLaptopCode, FaGraduationCap, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section className="py-28">
+    <section className="py-10">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div 
@@ -69,8 +68,10 @@ export default function Hero() {
                 {...fadeInUp}
               >
                 <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-                  Frontend web dev....
-                </p>
+                  Innovative Front End Developer with a passion for designing, building, and maintaining responsive
+                  websites. Skilled in modern web technologies, performance optimization, and creating 
+                  seamless user experiences that enhance usability and support business growth.                
+                   </p>
               </motion.section>
         
               {/* Skills Section */}
@@ -94,7 +95,8 @@ export default function Hero() {
                   <motion.div 
                     className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
                     variants={fadeInUp}
-                    {...cardHover}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     <FaCode className="h-8 w-8 text-primary mb-4" />
                     <h3 className="text-xl font-semibold mb-2">Frontend</h3>
@@ -109,7 +111,8 @@ export default function Hero() {
                   <motion.div 
                     className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
                     variants={fadeInUp}
-                    {...cardHover}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
                     <h3 className="text-xl font-semibold mb-2">sec 2</h3>
@@ -124,7 +127,8 @@ export default function Hero() {
                   <motion.div 
                     className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
                     variants={fadeInUp}
-                    {...cardHover}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
                     <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
