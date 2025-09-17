@@ -6,8 +6,8 @@ import {
   fadeIn, 
   staggerContainer, 
 } from '@/utils/animations'
-import { FaExternalLinkAlt } from 'react-icons/fa'
 import { cert } from '@/content/certifications'
+import DateWithVerification from '../components/DateWithVerification'
 
 export default function Experience() {
   return (
@@ -102,19 +102,23 @@ export default function Experience() {
           >
             <h3 className="text-xl font-semibold mb-2">Google ui/ux certification & Badge- Coursera</h3>
             <p className="text-primary mb-1">Foundations of user dxperience design</p>
-            <p className="text-secondary mb-1">2022/9</p>
+            <DateWithVerification date={'2022/9'} link={cert.google.foundations} />
             <p className="text-primary mb-1">Start the UX Design Process: Empathize, Define, and Ideate</p>
-            <p className="text-secondary mb-1">2022/10</p>
+            <DateWithVerification date={'2022/10'} link={cert.google.empathizeDefineIdeate} />
             <p className="text-primary mb-1">Build Wireframes and Low-Fidelity Prototypes</p>
-            <p className="text-secondary">2022/10</p>
+            <DateWithVerification date={'2022/10'} link={cert.google.wireframesLowFidelity} />
             <p className="text-primary mb-1">Conduct UX Research and Test Early Concepts</p>
-            <p className="text-secondary">2022/11</p>
+            <DateWithVerification date={'2022/11'} link={cert.google.uxResearchTesting} />
             <p className="text-primary mb-1">Create High-Fidelity Designs and Prototypes in Figma</p>
-            <p className="text-secondary">2022/11</p>
-            <p className="text-primary mb-1">Responsive Web Design in Adobe XD</p>
-            <p className="text-secondary">2022/12</p>
+            <DateWithVerification date={'2022/11'} link={cert.google.highFidelityFigma} />
+            <p className="text-primary mb-1">Build Dynamic User Interfaces</p>
+            <DateWithVerification date={'2022/12'} link={cert.google.dynamicui} />
             <p className="text-primary mb-1">Design a User Experience for Social Good</p>
-            <p className="text-secondary">2022/12</p>
+            <DateWithVerification date={'2022/12'} link={cert.google.socialGood} />
+            <p className="text-primary mb-1">Google UX design professional certificate</p>
+            <DateWithVerification date={'2022/12'} link={cert.google.socialGood} />
+            <p className="text-primary mb-1">Google UX Badge</p>
+            <DateWithVerification date={'2022/12'} link={cert.google.googlebadge} />
           </motion.div>
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
@@ -124,18 +128,7 @@ export default function Experience() {
           >
             <h3 className="text-xl font-semibold mb-2">Front-end web development (ITP)</h3>
             <p className="text-primary mb-2">Information Technology Institute (ITI)</p>
-            <p className="text-secondary">2021/8 - 2021/12</p>
-            <motion.a
-              href={cert.iti.frontendWebDev}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary hover:text-primary transition-colors mt-1"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaExternalLinkAlt className="h-5 w-5" />
-              <span>Verify Here</span>
-            </motion.a>
+            <DateWithVerification date={'2021/8 - 2021/12'} link={cert.iti.frontendWebDev} />
           </motion.div>
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"
@@ -145,18 +138,7 @@ export default function Experience() {
           >
             <h3 className="text-xl font-semibold mb-2">CS50 Introduction to Computer Science</h3>
             <p className="text-primary mb-2">harvard University - EDX</p>
-            <p className="text-secondary">2021/5 - 2021/9</p>
-            <motion.a
-              href={cert.harvard.cs50}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary hover:text-primary transition-colors mt-1"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaExternalLinkAlt className="h-5 w-5" />
-              <span>Verify Here</span>
-            </motion.a>
+            <DateWithVerification date={'2021/5 - 2021/9'} link={cert.harvard.cs50} />
           </motion.div>
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"
@@ -166,15 +148,16 @@ export default function Experience() {
           >
             <h3 className="text-xl font-semibold mb-2">Meta frontend developer certification - Coursera</h3>
             <p className="text-primary mb-1">Introduction to frontend</p>
-            <p className="text-secondary mb-1">2022/9</p>
+            <DateWithVerification date={'2022/9'} link={cert.meta.intro} />
             <p className="text-primary mb-1">Html and css in depth</p>
-            <p className="text-secondary mb-1">2022/9</p>
+            <DateWithVerification date={'2022/9'} link={cert.meta.htmlcss} />
             <p className="text-primary mb-1">Programming with javascript</p>
-            <p className="text-secondary">2022/9</p>
+            <DateWithVerification date={'2022/9'} link={cert.meta.javascript} />
             <p className="text-primary mb-1">Version control</p>
-            <p className="text-secondary">2022/9</p>
+            <DateWithVerification date={'2022/9'} link={cert.meta.versionControl} />
             <p className="text-primary mb-1">React basics</p>
-            <p className="text-secondary">2022/10</p>
+            <DateWithVerification date={'2022/10'} link={cert.meta.reactBasics} />
+
           </motion.div>
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"
@@ -184,44 +167,11 @@ export default function Experience() {
           >
             <h3 className="text-xl font-semibold mb-2">Egypt Future Work is Digital (EGFWD) - Udacity</h3>
             <p className="text-primary mb-1">Advanced web development track</p>
-            <p className="text-secondary mb-1">2021/10</p>
-             <motion.a
-              href={cert.egfwd.advanced}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary hover:text-primary transition-colors mb-4"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaExternalLinkAlt className="h-5 w-5" />
-              <span>Verify Here</span>
-            </motion.a>
+            <DateWithVerification date={'2021/10'} link={cert.egfwd.advanced} />
             <p className="text-primary mb-1">Professional web development track</p>
-            <p className="text-secondary mb-1">2021/7</p>
-             <motion.a
-              href={cert.egfwd.professional}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary hover:text-primary transition-colors mb-4"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaExternalLinkAlt className="h-5 w-5" />
-              <span>Verify Here</span>
-            </motion.a>
+            <DateWithVerification date={'2021/7'} link={cert.egfwd.professional} />
             <p className="text-primary mb-1">Challenger web development track</p>
-            <p className="text-secondary">2021/3</p>
-             <motion.a
-              href={cert.egfwd.challenger}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary hover:text-primary transition-colors mb-4"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaExternalLinkAlt className="h-5 w-5" />
-              <span>Verify Here</span>
-            </motion.a>
+            <DateWithVerification date={'2021/3'} link={cert.egfwd.challenger} />
           </motion.div>
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"

@@ -17,8 +17,10 @@ export const cert = {
     wireframesLowFidelity: 'https://coursera.org/verify/2VTNREGEB6BG',
     uxResearchTesting: 'https://coursera.org/verify/AGK6WGHTHKHZ',
     highFidelityFigma: 'https://coursera.org/verify/38V4BB8AJ4K7',
-    responsiveXD: 'https://coursera.org/verify/3N7J24ASJRTP',
+    dynamicui: 'https://coursera.org/verify/3N7J24ASJRTP',
     socialGood: 'https://coursera.org/verify/LLKMSLQ256TB',
+    sevencourses: 'https://coursera.org/verify/professional-cert/K9KKXSTG3ANM',
+    googlebadge: 'https://www.credly.com/go/VKPBbTgz'
   },
   harvard: {
     cs50: 'https://certificates.cs50.io/988e19c6-3393-474d-b9e2-3547d56b3080.pdf?size=letter',
