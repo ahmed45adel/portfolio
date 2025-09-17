@@ -93,6 +93,28 @@ export default function Experience() {
           animate="animate"
         >
           <motion.div 
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mb-4"
+            variants={fadeInUp}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <h3 className="text-xl font-semibold mb-2">Google ui/ux certification & Badge- Coursera</h3>
+            <p className="text-primary mb-1">Foundations of user dxperience design</p>
+            <p className="text-secondary mb-1">2022/9</p>
+            <p className="text-primary mb-1">Start the UX Design Process: Empathize, Define, and Ideate</p>
+            <p className="text-secondary mb-1">2022/10</p>
+            <p className="text-primary mb-1">Build Wireframes and Low-Fidelity Prototypes</p>
+            <p className="text-secondary">2022/10</p>
+            <p className="text-primary mb-1">Conduct UX Research and Test Early Concepts</p>
+            <p className="text-secondary">2022/11</p>
+            <p className="text-primary mb-1">Create High-Fidelity Designs and Prototypes in Figma</p>
+            <p className="text-secondary">2022/11</p>
+            <p className="text-primary mb-1">Responsive Web Design in Adobe XD</p>
+            <p className="text-secondary">2022/12</p>
+            <p className="text-primary mb-1">Design a User Experience for Social Good</p>
+            <p className="text-secondary">2022/12</p>
+          </motion.div>
+          <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
             whileHover={{ scale: 1.02 }}
@@ -118,12 +140,30 @@ export default function Experience() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
+            <h3 className="text-xl font-semibold mb-2">Meta frontend developer certification - Coursera</h3>
+            <p className="text-primary mb-1">Introduction to frontend</p>
+            <p className="text-secondary mb-1">2022/9</p>
+            <p className="text-primary mb-1">Html and css in depth</p>
+            <p className="text-secondary mb-1">2022/9</p>
+            <p className="text-primary mb-1">Programming with javascript</p>
+            <p className="text-secondary">2022/9</p>
+            <p className="text-primary mb-1">Version control</p>
+            <p className="text-secondary">2022/9</p>
+            <p className="text-primary mb-1">React basics</p>
+            <p className="text-secondary">2022/10</p>
+          </motion.div>
+          <motion.div 
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md  mt-4"
+            variants={fadeInUp}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <h3 className="text-xl font-semibold mb-2">Egypt Future Work is Digital (EGFWD) - Udacity</h3>
-            <p className="text-primary mb-1">Advanced web development track - 2021/10</p>
+            <p className="text-primary mb-1">Advanced web development track</p>
             <p className="text-secondary mb-4">2021/10</p>
-            <p className="text-primary mb-1">Professional web development track - 2021/10</p>
+            <p className="text-primary mb-1">Professional web development track</p>
             <p className="text-secondary mb-4">2021/7</p>
-            <p className="text-primary mb-1">Challenger web development track - 2021/10</p>
+            <p className="text-primary mb-1">Challenger web development track</p>
             <p className="text-secondary">2021/3</p>
           </motion.div>
           <motion.div 
