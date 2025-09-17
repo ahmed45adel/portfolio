@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-200/20 dark:border-gray-700/20 shadow-sm">
+    <nav className="fixed w-full bg-white/90 dark:bg-black/90 backdrop-blur-md z-50 border-b border-gray-200/20 dark:border-gray-700 shadow-sm">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Desktop Menu */}
@@ -59,7 +59,7 @@ export default function Navbar() {
             {/* Theme Toggle - Desktop */}
             <motion.button
               onClick={toggleTheme}
-              className="ml-10 p-2.5 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
+              className="ml-10 p-2.5 rounded-full bg-gray-100 dark:bg-black hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -86,7 +86,7 @@ export default function Navbar() {
             <div className="flex items-center space-x-4">
               <motion.button
                 onClick={toggleTheme}
-                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+                className="p-2 rounded-full bg-gray-100 dark:bg-black hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
