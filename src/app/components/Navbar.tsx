@@ -6,6 +6,7 @@ import { useTheme } from "../context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import ViewCVButton from "./ViewCV";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -29,6 +30,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center justify-center flex-1 relative">
             <div className="flex items-center space-x-10 relative">
+              <ViewCVButton />
               {menuItems.map((item) => {
                 const isActive = pathname === item.href;
 
