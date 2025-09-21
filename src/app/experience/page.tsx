@@ -38,7 +38,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Software Engineer</h3>
-            <p className="text-primary mb-2">Zid(ksa) / Inovola(eg) • 2022/1 - 2024/2</p>
+            <p className="font-semibold text-title mb-2">Zid(ksa) / Inovola(eg) • 2022/1 - 2024/2</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
               <li>Merchant Dashboard (vue jsx)</li>
               <li>Zidpay (vue jsx)</li>
@@ -55,7 +55,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">React Frontend Developer</h3>
-            <p className="text-primary mb-2">Winfi • 2021/6 - 2021/12</p>
+            <p className="font-semibold text-title mb-2">Winfi • 2021/6 - 2021/12</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
               <li>Customer portal (part time)</li>
               <li>Admin dashboard (part time)</li>
@@ -68,7 +68,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">React Frontend Developer</h3>
-            <p className="text-primary mb-2">Upwork • 2021/1 - 2021/6</p>
+            <p className="font-semibold text-title mb-2">Upwork • 2021/1 - 2021/6</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
               <li>Redirect page for STC</li>
               <li>Simple landing page</li>
@@ -101,23 +101,23 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Google ui/ux certification & Badge- Coursera</h3>
-            <p className="text-primary mb-1">Foundations of user dxperience design</p>
+            <p className="mb-1 font-semibold text-title">Foundations of user dxperience design</p>
             <DateWithVerification date={'2022/9'} link={cert.google.foundations} />
-            <p className="text-primary mb-1">Start the UX Design Process: Empathize, Define, and Ideate</p>
+            <p className="font-semibold text-title mb-1">Start the UX Design Process: Empathize, Define, and Ideate</p>
             <DateWithVerification date={'2022/10'} link={cert.google.empathizeDefineIdeate} />
-            <p className="text-primary mb-1">Build Wireframes and Low-Fidelity Prototypes</p>
+            <p className="font-semibold text-title mb-1">Build Wireframes and Low-Fidelity Prototypes</p>
             <DateWithVerification date={'2022/10'} link={cert.google.wireframesLowFidelity} />
-            <p className="text-primary mb-1">Conduct UX Research and Test Early Concepts</p>
+            <p className="font-semibold text-title mb-1">Conduct UX Research and Test Early Concepts</p>
             <DateWithVerification date={'2022/11'} link={cert.google.uxResearchTesting} />
-            <p className="text-primary mb-1">Create High-Fidelity Designs and Prototypes in Figma</p>
+            <p className="font-semibold text-title mb-1">Create High-Fidelity Designs and Prototypes in Figma</p>
             <DateWithVerification date={'2022/11'} link={cert.google.highFidelityFigma} />
-            <p className="text-primary mb-1">Build Dynamic User Interfaces</p>
+            <p className="font-semibold text-title mb-1">Build Dynamic User Interfaces</p>
             <DateWithVerification date={'2022/12'} link={cert.google.dynamicui} />
-            <p className="text-primary mb-1">Design a User Experience for Social Good</p>
+            <p className="font-semibold text-title mb-1">Design a User Experience for Social Good</p>
             <DateWithVerification date={'2022/12'} link={cert.google.socialGood} />
-            <p className="text-primary mb-1">Google UX design professional certificate</p>
+            <p className="font-semibold text-title mb-1">Google UX design professional certificate</p>
             <DateWithVerification date={'2022/12'} link={cert.google.socialGood} />
-            <p className="text-primary mb-1">Google UX Badge</p>
+            <p className="font-semibold text-title mb-1">Google UX Badge</p>
             <DateWithVerification date={'2022/12'} link={cert.google.googlebadge} />
           </motion.div>
           <motion.div 
@@ -127,7 +127,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Front-end web development (ITP)</h3>
-            <p className="text-primary mb-2">Information Technology Institute (ITI)</p>
+            <p className="font-semibold text-title mb-2">Information Technology Institute (ITI)</p>
             <DateWithVerification date={'2021/8 - 2021/12'} link={cert.iti.frontendWebDev} />
           </motion.div>
           <motion.div 
@@ -137,7 +137,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">CS50 Introduction to Computer Science</h3>
-            <p className="text-primary mb-2">harvard University - EDX</p>
+            <p className="font-semibold text-title mb-2">harvard University - EDX</p>
             <DateWithVerification date={'2021/5 - 2021/9'} link={cert.harvard.cs50} />
           </motion.div>
           <motion.div 
@@ -147,15 +147,15 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Meta frontend developer certification - Coursera</h3>
-            <p className="text-primary mb-1">Introduction to frontend</p>
+            <p className="font-semibold text-title mb-1">Introduction to frontend</p>
             <DateWithVerification date={'2022/9'} link={cert.meta.intro} />
-            <p className="text-primary mb-1">Html and css in depth</p>
+            <p className="font-semibold text-title mb-1">Html and css in depth</p>
             <DateWithVerification date={'2022/9'} link={cert.meta.htmlcss} />
-            <p className="text-primary mb-1">Programming with javascript</p>
+            <p className="font-semibold text-title mb-1">Programming with javascript</p>
             <DateWithVerification date={'2022/9'} link={cert.meta.javascript} />
-            <p className="text-primary mb-1">Version control</p>
+            <p className="font-semibold text-title mb-1">Version control</p>
             <DateWithVerification date={'2022/9'} link={cert.meta.versionControl} />
-            <p className="text-primary mb-1">React basics</p>
+            <p className="font-semibold text-title mb-1">React basics</p>
             <DateWithVerification date={'2022/10'} link={cert.meta.reactBasics} />
 
           </motion.div>
@@ -166,11 +166,11 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Egypt Future Work is Digital (EGFWD) - Udacity</h3>
-            <p className="text-primary mb-1">Advanced web development track</p>
+            <p className="font-semibold text-title mb-1">Advanced web development track</p>
             <DateWithVerification date={'2021/10'} link={cert.egfwd.advanced} />
-            <p className="text-primary mb-1">Professional web development track</p>
+            <p className="font-semibold text-title mb-1">Professional web development track</p>
             <DateWithVerification date={'2021/7'} link={cert.egfwd.professional} />
-            <p className="text-primary mb-1">Challenger web development track</p>
+            <p className="font-semibold text-title mb-1">Challenger web development track</p>
             <DateWithVerification date={'2021/3'} link={cert.egfwd.challenger} />
           </motion.div>
           <motion.div 
@@ -180,7 +180,7 @@ export default function Experience() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2">Bachelor of Engineering</h3>
-            <p className="text-primary mb-2">Facutly of Engineering | Alexandria University</p>
+            <p className="font-semibold text-title mb-2">Facutly of Engineering | Alexandria University</p>
             <p className="text-secondary">2014-2019</p>
           </motion.div>
         </motion.div>
