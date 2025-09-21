@@ -25,10 +25,10 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold">Email</h3>
               <a
-                href="mailto:ahmed45adel@yahoo.com"
+                href="mailto:ahmed-adel-mohamed@outlook.com"
                 className="text-secondary hover:text-primary transition-colors"
               >
-                ahmed45adel@yahoo.com
+                ahmed-adel-mohamed@outlook.com
               </a>
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export default function Footer() {
             <FaMapMarkerAlt className="h-6 w-6 text-primary" />
             <div>
               <h3 className="font-semibold">Location</h3>
-              <p className="text-secondary">Alexandria, Egypt</p>
+              <p className="text-secondary">Egypt</p>
             </div>
           </motion.div>
         </motion.div>

@@ -15,6 +15,16 @@ export const education = [
       { title: "Google UX Badge", date: "2022/12", link: cert.google.googlebadge },
     ],
   },
+    {
+    title: "Meta Frontend Developer Certification - Coursera",
+    certs: [
+      { title: "Introduction to frontend", date: "2022/9", link: cert.meta.intro },
+      { title: "Html and css in depth", date: "2022/9", link: cert.meta.htmlcss },
+      { title: "Programming with javascript", date: "2022/9", link: cert.meta.javascript },
+      { title: "Version control", date: "2022/9", link: cert.meta.versionControl },
+      { title: "React basics", date: "2022/10", link: cert.meta.reactBasics },
+    ],
+  },
   {
     title: "Front-end web development (ITP)",
     institution: "Information Technology Institute (ITI)",
@@ -24,16 +34,6 @@ export const education = [
     title: "CS50 Introduction to Computer Science",
     institution: "Harvard University - EDX",
     dateLink: { date: "2021/5 - 2021/9", link: cert.harvard.cs50 },
-  },
-  {
-    title: "Meta Frontend Developer Certification - Coursera",
-    certs: [
-      { title: "Introduction to frontend", date: "2022/9", link: cert.meta.intro },
-      { title: "Html and css in depth", date: "2022/9", link: cert.meta.htmlcss },
-      { title: "Programming with javascript", date: "2022/9", link: cert.meta.javascript },
-      { title: "Version control", date: "2022/9", link: cert.meta.versionControl },
-      { title: "React basics", date: "2022/10", link: cert.meta.reactBasics },
-    ],
   },
   {
     title: "Egypt Future Work is Digital (EGFWD) - Udacity",
