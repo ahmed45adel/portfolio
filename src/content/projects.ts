@@ -4,7 +4,7 @@ export const projects: Project[] = [
     {
         title: 'Instafy',
         description: 'Social media app engineered for effortless connections, engaging content sharing, and smooth user experiences.',
-        technologies: ['React', 'Typescript', 'Tailwind', 'Appwrite BaaS'],
+        technologies: ['React', 'Typescript', 'Tailwind', 'Appwrite'],
         githubLink: 'https://github.com/ahmed45adel/Instafy',
         demoLink: 'https://instafy-eta.vercel.app',
         image: '/instafy.png',
