@@ -26,21 +26,24 @@ export default function Projects() {
           {projects.map((project) => (
             <motion.article
               key={project.title}
-              className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
+              className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 flex flex-col h-full"
               variants={fadeInUp}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
+              {/* Project image */}
               <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  priority={project.title === 'Instafy'}
+                  priority={true}
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
+
+              {/* Title */}
               <motion.h3 
                 className="text-xl font-semibold mb-2"
                 whileHover={{ x: 5 }}
@@ -48,6 +51,8 @@ export default function Projects() {
               >
                 {project.title}
               </motion.h3>
+
+              {/* Description */}
               <motion.p 
                 className="text-gray-600 dark:text-gray-300 mb-4"
                 initial={{ opacity: 0 }}
@@ -56,6 +61,8 @@ export default function Projects() {
               >
                 {project.description}
               </motion.p>
+
+              {/* Technologies */}
               <motion.div 
                 className="flex flex-wrap gap-2 mb-4"
                 initial={{ opacity: 0 }}
@@ -73,6 +80,11 @@ export default function Projects() {
                   </motion.span>
                 ))}
               </motion.div>
+
+              {/* Spacer to push footer down */}
+              <div className="flex-grow"></div>
+
+              {/* Footer (Links) */}
               <motion.div 
                 className="flex gap-4"
                 initial={{ opacity: 0 }}
@@ -108,4 +120,4 @@ export default function Projects() {
       </div>
     </section>
   )
-} 
+}
