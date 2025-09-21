@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   const menuItems = [
-    { href: "/", label: "About" },
+    { href: "/", label: "Home" },
     { href: "/experience", label: "Experience" },
   ];
 
