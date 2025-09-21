@@ -2,12 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion'
-import { 
-  fadeInUp, 
-  fadeIn, 
-  staggerContainer, 
-} from '@/utils/animations'
-import { FaCode, FaLinkedin, FaGithub, FaPalette, FaTools, FaProjectDiagram, FaDatabase, FaServer } from 'react-icons/fa'
+import { fadeInUp } from '@/utils/animations'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import Projects from './Projects';
 
 export default function Hero() {
   return (
@@ -73,140 +70,10 @@ export default function Hero() {
                   seamless user experiences that enhance usability and support business growth.                
                    </p>
               </motion.section>
-        
-              {/* Skills Section */}
-              <motion.section 
-                className="mb-16"
-                {...fadeIn}
-                transition={{ delay: 0.2 }}
-              >
-                <motion.h2 
-                  className="section-title"
-                  {...fadeInUp}
-                >
-                  Skills
-                </motion.h2>
-                <motion.div 
-                  className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                  variants={staggerContainer}
-                  initial="initial"
-                  animate="animate"
-                >
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaCode className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">Core</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>React</li>
-                      <li>Next.js</li>
-                      <li>Vue.js</li>
-                      <li>TypeScript</li>
-                      <li>JavaScript</li>
-                      <li>jQuery</li>
-                      <li>React Router</li>
-                      <li>Vite</li>
-                      <li>npm</li>
-                      <li>yarn</li>
-                    </ul>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaPalette className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">Styling & UI</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>Tailwind CSS</li>
-                      <li>Styled Components</li>
-                      <li>Sass</li>
-                      <li>HTML5</li>
-                      <li>Bootstrap</li>
-                      <li>Material UI</li>
-                      <li>Chakra UI</li>
-                      <li>Shadcn/ui</li>
-                      <li>Framer Motion</li>
-                      <li>Next-Themes</li>
-                    </ul>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaTools className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">Tools</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>Git</li>
-                      <li>GitHub</li>
-                      <li>GitLab</li>
-                      <li>GitHub Pages</li>
-                      <li>Vercel</li>
-                      <li>Netlify</li>
-                      <li>Heroku</li>
-                      <li>Webpack</li>
-                      <li>Babel</li>
-                      <li>ESLint</li>
-                    </ul>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaProjectDiagram className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">APIs</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>Next.js API Routes</li>
-                      <li>Axios</li>
-                      <li>Ajax</li>
-                      <li>Zod</li>
-                      <li>Dotenv</li>
-                    </ul>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaDatabase className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">Storage</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>MongoDB</li>
-                      <li>Prisma</li>
-                      <li>Neon</li>
-                      <li>Redis (Upstash)</li>
-                      <li>Appwrite</li>
-                    </ul>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
-                    variants={fadeInUp}
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaServer className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">Services</h3>
-                    <ul className="text-secondary space-y-2">
-                      <li>Clerk Auth</li>
-                      <li>Bcryptjs</li>
-                      <li>Cloudinary</li>
-                      <li>Stripe</li>
-                      <li>Ably</li>
-                    </ul>
-                  </motion.div>
-                </motion.div>
-              </motion.section>
         </div>
       </div>
+      {/* Projects Section */}
+      <Projects />
     </section>
   );
 } 
