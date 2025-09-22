@@ -83,7 +83,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          <div className="md:hidden flex items-center justify-center flex-1">
+          <div className="md:hidden flex items-center justify-end flex-1">
             <div className="flex items-center space-x-4">
               <motion.button
                 onClick={toggleTheme}
